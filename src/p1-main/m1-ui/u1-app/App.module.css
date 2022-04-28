@@ -1,3 +1,20 @@
 .App {
 
 }
+.header {
+    display: flex;
+    align-items: center;
+}
+.headerMarker {
+    width: 20px;
+    height: 20px;
+    background: #056b88;
+}
+.link {
+    padding: 10px;
+}
+.link a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #056b88;
+}
