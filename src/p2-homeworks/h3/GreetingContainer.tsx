@@ -21,10 +21,12 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
         setName(e.currentTarget.value)
         setError('')// need to fix
     }
+
     const addUser = () => {
         if (name !== '') {
             addUserCallback(name);
-            alert(`Hello ${name}!`) // need to fix
+            alert(`Hello ${name}!`)
+            totalUsers += 1;// need to fix
             setName('');
         } else {
             setError('error, bro!!!')
@@ -33,7 +35,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
 
     }
 
-    const totalUsers = 0; // need to fix
+    let totalUsers = 0; // need to fix
 
     return (
             <Greeting

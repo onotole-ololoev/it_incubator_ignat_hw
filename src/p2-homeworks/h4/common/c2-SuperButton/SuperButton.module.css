@@ -1,7 +1,24 @@
 .default {
-
+    margin:10px;
+    padding:10px;
+    border-radius:10px;
+    background: #61dafb;
+    min-width: 80px;
 }
-
+.default:hover {
+    cursor: pointer;
+    background: #a3fcfc;
+    transition: 0.3s;
+}
 .red {
+    margin:10px;
+    padding:10px;
+    border-radius:10px;
+    min-width: 80px;
     background: red;
+}
+.red:hover {
+    cursor: pointer;
+    background: #e06924;
+    transition: 0.3s;
 }
