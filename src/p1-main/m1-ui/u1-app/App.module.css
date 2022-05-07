@@ -27,3 +27,17 @@
     font-weight: bold;
     color: #056b88;
 }
+.beautySpan {
+    display: inline-block;
+    border: 3px solid gold;
+    background: #61dafb;
+    margin: 10px;
+}
+.pen {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/103/103449.png");
+    background-size: cover;
+    margin-left: 10px;
+}
