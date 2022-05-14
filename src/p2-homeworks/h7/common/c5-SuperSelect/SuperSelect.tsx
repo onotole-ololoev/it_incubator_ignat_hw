@@ -16,7 +16,7 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
 ) => {
 
     const onChangeCallback = (e: ChangeEvent<HTMLSelectElement>) => {
-        onChange?.(e);
+        // onChange?.(e);
         const currentOption: any = options?.find( o => o === e.currentTarget.value)
         onChangeOption?.(currentOption);
     }
