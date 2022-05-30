@@ -8,7 +8,6 @@ function Clock() {
 
     const stop = () => {
         // stop
-
         clearTimeout(timerId);
     }
     // useEffect(() => {
@@ -36,10 +35,8 @@ function Clock() {
         setShow(!show)
     }
 
-    // const stringTime = 'Time' // fix with date
-    // const stringDate = 'Date' // fix with date
-    const stringTime = new Date().toLocaleTimeString();
-    const stringDate = new Date().toLocaleDateString();
+    const stringTime = date.toLocaleTimeString();
+    const stringDate = date.toLocaleDateString();
 
     return (
         <div>
