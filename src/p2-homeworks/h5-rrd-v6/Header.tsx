@@ -22,7 +22,7 @@ function Header() {
                 <div className={s.link}>
                     <Link to={PATH.JUNIOR_PLUS}>junior+</Link>
                 </div>
-                <div className={s.headerMarker} onClick={onClickHeaderHandler}></div>
+                <div className={s.headerMarker} onClick={onClickHeaderHandler} onMouseEnter={onClickHeaderHandler}></div>
             </div>
         </div>
 
