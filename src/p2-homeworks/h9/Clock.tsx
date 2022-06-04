@@ -7,16 +7,14 @@ function Clock() {
     const [show, setShow] = useState<boolean>(false)
 
     const stop = () => {
-        // stop
+
         clearTimeout(timerId);
     }
-    // useEffect(() => {
-    //     clearTimeout(timerId);
-    // }, []);
+
     const start = () => {
         stop()
         const id: number = window.setInterval(() => {
-            // setDate
+
             setDate(new Date())
         }, 1000)
         setTimerId(id)
@@ -25,9 +23,6 @@ function Clock() {
 
 
     const onMouseEnter = () => {
-        // show
-
-        // my code
         setShow(!show)
     }
     const onMouseLeave = () => {
