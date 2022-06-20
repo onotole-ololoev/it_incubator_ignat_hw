@@ -9,9 +9,12 @@ function HW11() {
     const onChangeRange = (value: number) => {
         setValue1(value)
     }
-    const onChangeRangeMax = (value: number) => {
-        setValue2(value)
+
+    const onChangeRangeDouble = (value: [number, number]) => {
+        setValue1(value[0])
+        setValue2(value[1])
     }
+    let values: [number, number] = [value1, value2]
 
     return (
         <div>
@@ -27,17 +30,15 @@ function HW11() {
                 />
             </div>
 
-            <div>
-                <span>{value1}</span>
-                <SuperDoubleRange
-                    // сделать так чтоб value1 и value2 изменялось
-                   min={value1}
-                   max={value2}
-                   onChangeRange={(value) => onChangeRange(value)}
-                   onChangeRangeMax={(value) => onChangeRangeMax(value)}
-                />
-                <span>{value2}</span>
-            </div>
+            {/*<div>*/}
+            {/*    <span>{value1}</span>*/}
+            {/*    <SuperDoubleRange*/}
+            {/*        // сделать так чтоб value1 и value2 изменялось*/}
+            {/*       value={values}*/}
+            {/*       onChangeRange={(value) => onChangeRangeDouble(value)}*/}
+            {/*    />*/}
+            {/*    <span>{value2}</span>*/}
+            {/*</div>*/}
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
