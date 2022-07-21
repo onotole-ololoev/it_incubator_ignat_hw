@@ -1,7 +1,8 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import {requestAPI} from "./api/hw13-api";
 import Button from "./Button";
 import CheckBox from "./CheckBox";
+
 
 const Request = () => {
 
@@ -14,7 +15,10 @@ const Request = () => {
     const setBoxValue = () => {
         requestAPI.post(isCheck)
             .then((res) => {
-                res.data.success = isCheck
+                console.log(res.data)
+            })
+            .catch(error => {
+                console.log(error.response ? error.response.data.errorText : error.message);
             })
     }
 
